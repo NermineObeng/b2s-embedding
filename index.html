@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2S Embedding</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.9.1.min.js"></script>
+    <script src="app.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>My Embedded Dashboard</h1>
+    <div>This is my first time embedding</div>
+    <hr />
+    <div class="buttons">
+      <button id="exportPDF">Export to PDF</button>
+      <button id="exportPPT">Export to PowerPoint</button>
+    </div>
+    <hr />
+    <div id="numberFilters">
+      <input type="number" placeholder="Min Value" id="minValue" />
+      <input type="number" placeholder="Max Value" id="maxValue" />
+      <button id="FilterButton">Filter</button>
+    </div>
+    <div id="tableauViz"></div>
+  </body>
+</html>
